@@ -24,7 +24,9 @@ export class GameNewComponent {
     });
 
     this.formGroup.valueChanges.subscribe((value) => {
-      this.table.set(this.resizeTable(value.rows, value.cols))
+      if (this.formGroup.valid) {  
+        this.table.set(this.resizeTable(value.rows, value.cols));
+      }
     });
   }
 
