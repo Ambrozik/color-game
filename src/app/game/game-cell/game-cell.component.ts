@@ -6,6 +6,6 @@ import { Component, model } from '@angular/core';
   styleUrl: './game-cell.component.css'
 })
 export class GameCellComponent {
-  color = model<string>('')
+  color = model<string>('white')
 
 }
