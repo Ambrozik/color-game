@@ -1,6 +1,6 @@
 <form [formGroup]="formGroup" (submit)="submit($event)">
     <input placeholder="email" formControlName="email" minlength="2" required name="email" />
-    <input required formControlName="password" type="password" matInput placeholder="******">
+    <input required formControlName="password" type="password" placeholder="******">
 
     <app-loading [isLoading]="loading">
         <button type="submit" [disabled]="formGroup.invalid">login</button>

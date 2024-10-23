@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, model } from '@angular/core';
 
 @Component({
   selector: 'app-game-cell',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './game-cell.component.css'
 })
 export class GameCellComponent {
+  color = model<string>('')
 
 }

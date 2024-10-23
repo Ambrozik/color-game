@@ -14,7 +14,7 @@ export class AppComponent implements OnInit, OnDestroy {
   #router = inject(Router);
   loading = false;
   #sub!: Subscription;
-  username : string |undefined
+  username: string | undefined
   logout() {
     this.loading = true;
     this.#sub = this.#userService.logout().subscribe(() => {
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.#userService.user$.subscribe(
-      user => this.username = user?.username 
+      user => this.username = user?.username
     )
   }
 
