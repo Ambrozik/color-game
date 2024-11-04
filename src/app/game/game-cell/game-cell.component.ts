@@ -7,5 +7,4 @@ import { Component, model } from '@angular/core';
 })
 export class GameCellComponent {
   color = model<string>('white')
-
 }

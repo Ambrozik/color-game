@@ -1,4 +1,4 @@
-import { Component, inject, model, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, model, signal } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export type table = {
@@ -8,7 +8,8 @@ export type table = {
 @Component({
   selector: 'app-game-new',
   templateUrl: './game-new.component.html',
-  styleUrl: './game-new.component.css'
+  styleUrl: './game-new.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 
